@@ -1,123 +1,149 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-	<title>Aryan Padiyal | Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <title>Aryan Padiyal | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-
 <body class="is-preload">
-	<div id="wrapper" class="fade-in">
+<div id="wrapper" class="fade-in">
 
-		<div id="intro">
-			<h1>Aryan Padiyal</h1>
-			<p>Embedded Firmware Engineer<br>ARM Cortex-M • STM32 • Embedded C • RTOS</p>
-			<ul class="actions">
-				<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
+<div id="intro">
+    <h1>Aryan Padiyal</h1>
+    <p>Embedded Firmware Engineer<br>ARM Cortex-M • STM32 • Embedded C • RTOS</p>
+    <ul class="actions">
+        <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+    </ul>
+</div>
 
-		<header id="header">
-			<a href="index.html" class="logo">Aryan Padiyal</a>
-		</header>
+<header id="header">
+    <a href="index.html" class="logo">Aryan Padiyal</a>
+</header>
 
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">Portfolio</a></li>
-			</ul>
-			<ul class="icons">
-				<li><a href="https://github.com/jenilaryan" class="icon brands fa-github" target="_blank"><span
-							class="label">GitHub</span></a></li>
-				<li><a href="https://www.linkedin.com/in/aryan-padiyal/" class="icon brands fa-linkedin"
-						target="_blank"><span class="label">LinkedIn</span></a></li>
-			</ul>
-		</nav>
+<nav id="nav">
+    <ul class="links">
+        <li class="active"><a href="index.html">Portfolio</a></li>
+    </ul>
+    <ul class="icons">
+        <li><a href="https://github.com/jenilaryan" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/aryan-padiyal/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+    </ul>
+</nav>
 
-		<div id="main">
+<div id="main">
 
-			<article class="post featured">
-				<header class="major">
-					<h2>About Me</h2>
-					<p>
-						Embedded firmware engineer focused on ARM Cortex-M microcontrollers using Embedded C,
-						STM32 HAL, UART, SPI, I²C, GPIO and RTOS. I enjoy building hands-on firmware
-						projects that interface directly with hardware.
-					</p>
-				</header>
-				<ul class="actions special">
-					<li><a href="resume.pdf" class="button large">Download Resume</a></li>
-				</ul>
-			</article>
+<article class="post featured">
+<header class="major">
+<h2>About Me</h2>
+<p>
+Embedded firmware engineer focused on ARM Cortex-M microcontrollers using Embedded C,
+STM32 HAL, UART, SPI, I²C, GPIO and RTOS. I enjoy building hands-on firmware
+projects that interface directly with hardware.
+</p>
+</header>
+<ul class="actions special">
+<li><a href="resume.pdf" class="button large">Download Resume</a></li>
+</ul>
+</article>
 
-			<h2 style="text-align:center;">Projects</h2>
+<h2 style="text-align:center;">Projects</h2>
 
-			<section class="posts">
+<section class="posts">
 
-				<article>
+<article>
+<header>
+<h2><a href="#">STM32 UART<br/>LED Command Parser</a></h2>
+</header>
 
-					<header>
-						<h2>
-							<a href="#">
-								STM32 UART<br />
-								LED Command Parser
-							</a>
-						</h2>
-					</header>
+<a class="image fit"><img src="images/Board.jpeg" alt="STM32 Board"></a>
+<a class="image fit"><img src="images/minicon-demo.png" alt="UART Demo"></a>
 
-					<a class="image fit">
-						<img src="images/Board.jpeg" alt="STM32 NUCLEO-F446RE Board">
-					</a>
+<p>
+Developed a UART command parser on the STM32 NUCLEO-F446RE using Embedded C and
+the STM32 HAL library. The firmware receives commands over USART2, parses text
+commands, controls the onboard LED, echoes responses, and handles invalid input.
+</p>
 
-					<a class="image fit">
-						<img src="images/minicon-demo.png" alt="UART Demo">
-					</a>
+<h3>Technologies Used</h3>
+<ul>
+<li>STM32 NUCLEO-F446RE</li>
+<li>Embedded C</li>
+<li>STM32 HAL</li>
+<li>USART2 (115200 baud)</li>
+<li>GPIO</li>
+</ul>
 
-					<p>
-						Developed a UART command parser on the STM32 NUCLEO-F446RE using Embedded C and
-						STM32 HAL. The firmware receives commands over USART2, parses text commands,
-						controls the onboard LED, echoes responses and handles invalid commands.
-					</p>
+<ul class="actions special">
+<li><a href="https://github.com/jenilaryan/stm32-uart-led-command" class="button">View Project</a></li>
+</ul>
+</article>
 
-					<ul>
-						<li>STM32 NUCLEO-F446RE</li>
-						<li>Embedded C</li>
-						<li>STM32 HAL</li>
-						<li>USART2 (115200 baud)</li>
-						<li>GPIO</li>
-					</ul>
+<article>
+<header>
+<h2><a href="#">STM32 EXTI<br/>Button Interrupt</a></h2>
+</header>
 
-					<ul class="actions special">
-						<li><a href="https://github.com/jenilaryan/stm32-uart-led-command" class="button">View
-								Project</a></li>
-					</ul>
+<a class="image fit"><img src="images/exti-board.jpeg" alt="STM32 EXTI Board"></a>
+<a class="image fit"><img src="images/exti-demo.png" alt="EXTI Demo"></a>
 
-				</article>
+<p>
+Designed and implemented an external interrupt (EXTI) application on the STM32
+NUCLEO-F446RE using Embedded C and the STM32 HAL library. Pressing the onboard
+blue push button (PC13) generates a hardware interrupt handled by the NVIC,
+which invokes the Interrupt Service Routine (ISR) to toggle the onboard green
+LED (PA5). The project demonstrates interrupt-driven programming, GPIO
+configuration, HAL callback functions, and efficient CPU utilization without
+continuous polling.
+</p>
 
-			</section>
+<h3>Technologies Used</h3>
+<ul>
+<li>STM32 NUCLEO-F446RE</li>
+<li>Embedded C</li>
+<li>STM32 HAL</li>
+<li>STM32CubeIDE</li>
+<li>STM32CubeMX</li>
+<li>GPIO</li>
+<li>EXTI</li>
+<li>NVIC</li>
+</ul>
 
-		</div>
+<h3>Concepts Demonstrated</h3>
+<ul>
+<li>External Interrupts (EXTI)</li>
+<li>Interrupt Service Routine (ISR)</li>
+<li>Nested Vectored Interrupt Controller (NVIC)</li>
+<li>HAL Callback Functions</li>
+<li>Interrupt Priorities</li>
+<li>Context Saving and Restoring</li>
+</ul>
 
-		<div id="copyright">
-			<ul>
-				<li>&copy; 2026 Aryan Padiyal</li>
-				<li>Built with HTML5 UP Massively</li>
-			</ul>
-		</div>
+<ul class="actions special">
+<li><a href="https://github.com/jenilaryan/stm32-exti-button-interrupt" class="button">View Project</a></li>
+</ul>
+</article>
 
-	</div>
+</section>
+</div>
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+<div id="copyright">
+<ul>
+<li>&copy; 2026 Aryan Padiyal</li>
+<li>Built with HTML5 UP Massively</li>
+</ul>
+</div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
-
 </html>
