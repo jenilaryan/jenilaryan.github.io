@@ -44,11 +44,9 @@
                 <header class="major">
                     <h2>About Me</h2>
                     <p>
-                        
-    DevOps engineer building CI/CD pipelines and cloud infrastructure with Docker, Jenkins,
-    and AWS. Background in embedded systems and low-level programming, which carries over
-    into a comfort with systems-level troubleshooting and infrastructure automation.
-
+                        DevOps engineer building CI/CD pipelines and cloud infrastructure with Docker, Jenkins,
+                        and AWS. Background in embedded systems and low-level programming, which carries over
+                        into a comfort with systems-level troubleshooting and infrastructure automation.
                     </p>
                 </header>
                 <ul class="actions special">
@@ -56,111 +54,122 @@
                 </ul>
             </article>
 
-            <h2 style="text-align:center;">Projects</h2>
+            <h2 style="text-align:center;">DevOps Projects</h2>
 
             <section class="posts">
-<article>
-    <header>
-        <h2><a href="#">Jenkins CI/CD Pipeline<br />with Docker &amp; ECS Fargate</a></h2>
-    </header>
-    <a class="image fit"><img src="docs/Jenkins_pipeline.png" alt="Jenkins Pipeline"></a>
-    <a class="image fit"><img src="docs/ECS_task_run.png" alt="ECS Task Running"></a>
-    <a class="image fit"><img src="docs/web_page.png" alt="Deployed Web Page"></a>
-    <p>
-        Built an end-to-end CI/CD pipeline on a self-hosted Jenkins server: pushes to a
-        GitHub repo trigger a Jenkins job via a webhook (exposed locally through ngrok),
-        which builds a Docker image, pushes it to Amazon ECR, and deploys it to an ECS
-        Fargate cluster.
-    </p>
-
-    <h3>Technologies Used</h3>
-    <ul>
-        <li>Jenkins</li>
-        <li>Docker</li>
-        <li>Amazon ECR</li>
-        <li>Amazon ECS (Fargate)</li>
-        <li>GitHub Webhooks</li>
-        <li>ngrok</li>
-    </ul>
-
-    <ul class="actions special">
-        <li><a href="https://github.com/jenilaryan/jenkins-docker-ecs-pipeline" class="button">View
-        Project</a></li>
-    </ul>
-</article>
                 <article>
                     <header>
-                        <h2><a href="#">STM32 UART<br />LED Command Parser</a></h2>
+                        <h2><a href="#">Jenkins CI/CD Pipeline<br />with Docker &amp; ECS Fargate</a></h2>
                     </header>
-
-                    <a class="image fit"><img src="images/Board.jpeg" alt="STM32 Board"></a>
-                    <a class="image fit"><img src="images/minicon-demo.png" alt="UART Demo"></a>
-
+                    <a class="image fit"><img src="docs/Jenkins_pipeline.png" alt="Jenkins Pipeline"></a>
+                    <a class="image fit"><img src="docs/ECS_task_run.png" alt="ECS Task Running"></a>
+                    <a class="image fit"><img src="docs/web_page.png" alt="Deployed Web Page"></a>
                     <p>
-                        Developed a UART command parser on the STM32 NUCLEO-F446RE using Embedded C and
-                        the STM32 HAL library. The firmware receives commands over USART2, parses text
-                        commands, controls the onboard LED, echoes responses, and handles invalid input.
+                        Built an end-to-end CI/CD pipeline on a self-hosted Jenkins server: pushes to a
+                        GitHub repo trigger a Jenkins job via a webhook (exposed locally through ngrok),
+                        which builds a Docker image, pushes it to Amazon ECR, and deploys it to an ECS
+                        Fargate cluster.
                     </p>
 
                     <h3>Technologies Used</h3>
                     <ul>
-                        <li>STM32 NUCLEO-F446RE</li>
-                        <li>Embedded C</li>
-                        <li>STM32 HAL</li>
-                        <li>USART2 (115200 baud)</li>
-                        <li>GPIO</li>
+                        <li>Jenkins</li>
+                        <li>Docker</li>
+                        <li>Amazon ECR</li>
+                        <li>Amazon ECS (Fargate)</li>
+                        <li>GitHub Webhooks</li>
+                        <li>ngrok</li>
                     </ul>
 
                     <ul class="actions special">
-                        <li><a href="https://github.com/jenilaryan/stm32-uart-led-command" class="button">View
+                        <li><a href="https://github.com/jenilaryan/jenkins-docker-ecs-pipeline" class="button">View
                                 Project</a></li>
                     </ul>
                 </article>
-
-                <article>
-                    <header>
-                        <h2><a href="#">STM32 EXTI<br />Button Interrupt</a></h2>
-                    </header>
-
-                    <p>
-                        Designed and implemented an external interrupt (EXTI) application on the STM32
-                        NUCLEO-F446RE using Embedded C and the STM32 HAL library. Pressing the onboard
-                        blue push button (PC13) generates a hardware interrupt handled by the NVIC,
-                        which invokes the Interrupt Service Routine (ISR) to toggle the onboard green
-                        LED (PA5). The project demonstrates interrupt-driven programming, GPIO
-                        configuration, HAL callback functions, and efficient CPU utilization without
-                        continuous polling.
-                    </p>
-
-                    <h3>Technologies Used</h3>
-                    <ul>
-                        <li>STM32 NUCLEO-F446RE</li>
-                        <li>Embedded C</li>
-                        <li>STM32 HAL</li>
-                        <li>STM32CubeIDE</li>
-                        <li>STM32CubeMX</li>
-                        <li>GPIO</li>
-                        <li>EXTI</li>
-                        <li>NVIC</li>
-                    </ul>
-
-                    <h3>Concepts Demonstrated</h3>
-                    <ul>
-                        <li>External Interrupts (EXTI)</li>
-                        <li>Interrupt Service Routine (ISR)</li>
-                        <li>Nested Vectored Interrupt Controller (NVIC)</li>
-                        <li>HAL Callback Functions</li>
-                        <li>Interrupt Priorities</li>
-                        <li>Context Saving and Restoring</li>
-                    </ul>
-
-                    <ul class="actions special">
-                        <li><a href="https://github.com/jenilaryan/STM32_EXTI_BUTTON_INTERRUPT" class="button">View
-                                Project</a></li>
-                    </ul>
-                </article>
-
             </section>
+
+            <details style="text-align:center; margin-top:60px;">
+                <summary style="cursor:pointer; font-size:1.5em; font-weight:600; display:inline-block;">
+                    Embedded Systems Projects (click to expand)
+                </summary>
+
+                <section class="posts" style="margin-top:30px; text-align:left;">
+
+                    <article>
+                        <header>
+                            <h2><a href="#">STM32 UART<br />LED Command Parser</a></h2>
+                        </header>
+
+                        <a class="image fit"><img src="images/Board.jpeg" alt="STM32 Board"></a>
+                        <a class="image fit"><img src="images/minicon-demo.png" alt="UART Demo"></a>
+
+                        <p>
+                            Developed a UART command parser on the STM32 NUCLEO-F446RE using Embedded C and
+                            the STM32 HAL library. The firmware receives commands over USART2, parses text
+                            commands, controls the onboard LED, echoes responses, and handles invalid input.
+                        </p>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>STM32 NUCLEO-F446RE</li>
+                            <li>Embedded C</li>
+                            <li>STM32 HAL</li>
+                            <li>USART2 (115200 baud)</li>
+                            <li>GPIO</li>
+                        </ul>
+
+                        <ul class="actions special">
+                            <li><a href="https://github.com/jenilaryan/stm32-uart-led-command" class="button">View
+                                    Project</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">STM32 EXTI<br />Button Interrupt</a></h2>
+                        </header>
+
+                        <p>
+                            Designed and implemented an external interrupt (EXTI) application on the STM32
+                            NUCLEO-F446RE using Embedded C and the STM32 HAL library. Pressing the onboard
+                            blue push button (PC13) generates a hardware interrupt handled by the NVIC,
+                            which invokes the Interrupt Service Routine (ISR) to toggle the onboard green
+                            LED (PA5). The project demonstrates interrupt-driven programming, GPIO
+                            configuration, HAL callback functions, and efficient CPU utilization without
+                            continuous polling.
+                        </p>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>STM32 NUCLEO-F446RE</li>
+                            <li>Embedded C</li>
+                            <li>STM32 HAL</li>
+                            <li>STM32CubeIDE</li>
+                            <li>STM32CubeMX</li>
+                            <li>GPIO</li>
+                            <li>EXTI</li>
+                            <li>NVIC</li>
+                        </ul>
+
+                        <h3>Concepts Demonstrated</h3>
+                        <ul>
+                            <li>External Interrupts (EXTI)</li>
+                            <li>Interrupt Service Routine (ISR)</li>
+                            <li>Nested Vectored Interrupt Controller (NVIC)</li>
+                            <li>HAL Callback Functions</li>
+                            <li>Interrupt Priorities</li>
+                            <li>Context Saving and Restoring</li>
+                        </ul>
+
+                        <ul class="actions special">
+                            <li><a href="https://github.com/jenilaryan/STM32_EXTI_BUTTON_INTERRUPT" class="button">View
+                                    Project</a></li>
+                        </ul>
+                    </article>
+
+                </section>
+            </details>
+
         </div>
 
         <div id="copyright">
