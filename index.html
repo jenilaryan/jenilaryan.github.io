@@ -16,7 +16,7 @@
 
         <div id="intro">
             <h1>Aryan Padiyal</h1>
-            <p>Embedded Firmware Engineer<br>ARM Cortex-M • STM32 • Embedded C • RTOS</p>
+            <p>DevOps Engineer<br>AWS • Terraform • Docker • Jenkins • CI/CD</p>
             <ul class="actions">
                 <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
@@ -44,9 +44,11 @@
                 <header class="major">
                     <h2>About Me</h2>
                     <p>
-                        Embedded firmware engineer focused on ARM Cortex-M microcontrollers using Embedded C,
-                        STM32 HAL, UART, SPI, I²C, GPIO and RTOS. I enjoy building hands-on firmware
-                        projects that interface directly with hardware.
+                        
+    DevOps engineer building CI/CD pipelines and cloud infrastructure with Docker, Jenkins,
+    and AWS. Background in embedded systems and low-level programming, which carries over
+    into a comfort with systems-level troubleshooting and infrastructure automation.
+
                     </p>
                 </header>
                 <ul class="actions special">
@@ -57,7 +59,35 @@
             <h2 style="text-align:center;">Projects</h2>
 
             <section class="posts">
+<article>
+    <header>
+        <h2><a href="#">Jenkins CI/CD Pipeline<br />with Docker &amp; ECS Fargate</a></h2>
+    </header>
+    <a class="image fit"><img src="docs/Jenkins_pipeline.png" alt="Jenkins Pipeline"></a>
+    <a class="image fit"><img src="docs/ECS_task_run.png" alt="ECS Task Running"></a>
+    <a class="image fit"><img src="docs/web_page.png" alt="Deployed Web Page"></a>
+    <p>
+        Built an end-to-end CI/CD pipeline on a self-hosted Jenkins server: pushes to a
+        GitHub repo trigger a Jenkins job via a webhook (exposed locally through ngrok),
+        which builds a Docker image, pushes it to Amazon ECR, and deploys it to an ECS
+        Fargate cluster.
+    </p>
 
+    <h3>Technologies Used</h3>
+    <ul>
+        <li>Jenkins</li>
+        <li>Docker</li>
+        <li>Amazon ECR</li>
+        <li>Amazon ECS (Fargate)</li>
+        <li>GitHub Webhooks</li>
+        <li>ngrok</li>
+    </ul>
+
+    <ul class="actions special">
+        <li><a href="https://github.com/jenilaryan/jenkins-docker-ecs-pipeline" class="button">View
+        Project</a></li>
+    </ul>
+</article>
                 <article>
                     <header>
                         <h2><a href="#">STM32 UART<br />LED Command Parser</a></h2>
